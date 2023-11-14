@@ -14,6 +14,11 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-
     }
+
+    public void OnPostChangeStatus()
+    {
+        var a = 1;
+        a++;
+    } 
 }

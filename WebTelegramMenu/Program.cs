@@ -1,4 +1,9 @@
+using System.Net;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+
 var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager configuration = builder.Configuration;
+builder.Services.Configure<KestrelServerOptions>(configuration.GetSection("Kestrel"));
 
 // Add services to the container.
 builder.Services.AddRazorPages();

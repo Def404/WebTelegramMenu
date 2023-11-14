@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebTelegramMenu.Pages;
+namespace WebTelegramMenu.Pages.telegram;
 
 public class IndexModel : PageModel
 {
@@ -14,11 +13,6 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
+        
     }
-
-    public void OnPostChangeStatus()
-    {
-        var a = 1;
-        a++;
-    } 
 }
